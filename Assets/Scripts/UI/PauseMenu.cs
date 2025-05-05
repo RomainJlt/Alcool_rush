@@ -40,6 +40,7 @@ public class PauseMenu : MonoBehaviour
 
     private void ResumeGame()
     {
+        Debug.Log("ResumeGame called");
         isPaused = false;
         Time.timeScale = 1f;
         if (pauseMenuPanel != null)
@@ -48,6 +49,7 @@ public class PauseMenu : MonoBehaviour
 
     private void QuitToMenu()
     {
+        Debug.Log("QuitToMenu called");
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenuScene");
     }
