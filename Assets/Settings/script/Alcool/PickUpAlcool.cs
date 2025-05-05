@@ -6,12 +6,12 @@ public class PickUpAlcool : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Alcool"))
+        if (other.CompareTag("Player"))
         {
             am.alcoolcount++;
 
             // Détruire l'objet alcool
-            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
 }
