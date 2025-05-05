@@ -27,21 +27,19 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement.x > 0)
         {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 90);
+            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, -90);
         }
         else if (movement.x < 0)
         {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, -90); // Rotation vers la gauche (-90 degrés)
+            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 90);
         }
         else if (movement.y > 0)
         {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 180); // Rotation vers le bas (180 degrés)
-
+            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (movement.y < 0)
         {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 0); // Rotation vers le haut (pas de rotation)
-
+            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 180);
         }
 
 
