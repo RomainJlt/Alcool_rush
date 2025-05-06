@@ -12,35 +12,39 @@ public class PlayerMovement : MonoBehaviour
     
     private Vector2 movement;
 
+    public PlayerHealth playerHealth; // Référence à la classe PlayerHealth
+
     void Update()
     {
-        // Entrées du joueur
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        movement = movement.normalized; // Normaliser le vecteur de mouvement pour éviter une vitesse diagonale plus rapide
-
-        animator.SetFloat("Speed", movement.magnitude); // Mettre à jour le paramètre "Speed" de l'Animator
-    
-// Initialisation du regard au lancement du jeu
-
-
-        if (movement.x > 0)
+        if (playerHealth.isAlive) // Vérifie si le joueur est vivant
         {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, -90);
+            // Entrées du joueur
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+
+            movement = movement.normalized; // Normaliser le vecteur de mouvement pour éviter une vitesse diagonale plus rapide
+
+            animator.SetFloat("Speed", movement.magnitude); // Mettre à jour le paramètre "Speed" de l'Animator
+
+
+            if (movement.x > 0)
+            {
+                spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, -90);
+            }
+            else if (movement.x < 0)
+            {
+                spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 90);
+            }
+            else if (movement.y > 0)
+            {
+                spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            else if (movement.y < 0)
+            {
+                spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 180);
+            }
         }
-        else if (movement.x < 0)
-        {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 90);
-        }
-        else if (movement.y > 0)
-        {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        else if (movement.y < 0)
-        {
-            spriteRenderer.transform.rotation = Quaternion.Euler(0, 0, 180);
-        }
+
 
 
     }

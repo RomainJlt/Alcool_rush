@@ -5878,6 +5878,7 @@ GameObject:
   - component: {fileID: 934779204}
   - component: {fileID: 934779203}
   - component: {fileID: 934779206}
+  - component: {fileID: 934779207}
   m_Layer: 0
   m_Name: dad
   m_TagString: Untagged
@@ -5997,7 +5998,7 @@ MonoBehaviour:
   target: {fileID: 951004164}
   speed: 120
   nextWpDistance: 1
-  attackRange: 1.5
+  attackRange: 1
   seeker: {fileID: 934779205}
   rb: {fileID: 934779203}
   animator: {fileID: 934779206}
@@ -6054,6 +6055,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &934779207
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934779200}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.15
 --- !u!1 &951004160
 GameObject:
   m_ObjectHideFlags: 0
@@ -6068,6 +6105,7 @@ GameObject:
   - component: {fileID: 951004161}
   - component: {fileID: 951004165}
   - component: {fileID: 951004166}
+  - component: {fileID: 951004167}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -6118,6 +6156,7 @@ MonoBehaviour:
   rigidbody: {fileID: 951004161}
   animator: {fileID: 951004165}
   spriteRenderer: {fileID: 951004163}
+  playerHealth: {fileID: 951004166}
 --- !u!212 &951004163
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6223,7 +6262,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  currentHealth: 0
+  isAlive: 1
+  healthbarUI: {fileID: 349990567}
+  hpPrefab: {fileID: 1980768149577816621, guid: 366c70bcbcfc5164e99ef7c2b6f4441f, type: 3}
+  animator: {fileID: 951004165}
+  spriteRenderer: {fileID: 951004163}
+--- !u!58 &951004167
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951004160}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.75
 --- !u!1 &1351553445
 GameObject:
   m_ObjectHideFlags: 0

@@ -136,7 +136,7 @@ void Update()
         animator.SetBool("isAttacking", true);
         currenCoolDown = attackCoolDown; // Réinitialise le temps de recharge
         animator.SetTrigger("Attack"); 
-        Debug.Log("animation");
+        // Debug.Log("animation");
     }
 
     void EndOfAttack()
