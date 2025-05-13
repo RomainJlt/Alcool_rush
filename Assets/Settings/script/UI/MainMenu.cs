@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     private void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Home");
     }
 
     private void OpenOptions()
