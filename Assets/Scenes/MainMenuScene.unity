@@ -2633,7 +2633,7 @@ MonoBehaviour:
   fullscreenToggle: {fileID: 1562501407}
   resolutionDropdown: {fileID: 1107727870}
   controlsText: {fileID: 874777022}
-  creditsText: {fileID: 0}
+  creditsText: {fileID: 548861587}
 --- !u!1 &1880931483
 GameObject:
   m_ObjectHideFlags: 0

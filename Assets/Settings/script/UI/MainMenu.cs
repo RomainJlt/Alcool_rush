@@ -56,12 +56,12 @@ public class MainMenu : MonoBehaviour
 
         if (controlsText != null)
         {
-            controlsText.text = "Contrôles :\nEspace = Sauter\nFlèches = Se déplacer\nEchap = Pause";
+            controlsText.text = "Contrôles :\nForward: Z\nBackward: S\nLeft: Q\nRight: D\nEchap = Pause";
         }
 
         if (creditsText != null)
         {
-            creditsText.text = "Map : https://jik-a-4.itch.io/metrocity\nCréateurs du jeu : https://github.com/CryptoDebug - https://github.com/RomainJlt - https://github.com/star0062 - https://github.com/PaulDecat";
+            creditsText.text = "Map : jik-a-4";
         }
     }
 
