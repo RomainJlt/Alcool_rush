@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Toggle fullscreenToggle;
     [SerializeField] private Dropdown resolutionDropdown;
     [SerializeField] private Text controlsText;
+    [SerializeField] private Text creditsText;
 
     private Resolution[] resolutions;
 
@@ -57,6 +58,11 @@ public class MainMenu : MonoBehaviour
         {
             controlsText.text = "Contrôles :\nEspace = Sauter\nFlèches = Se déplacer\nEchap = Pause";
         }
+
+        if (creditsText != null)
+        {
+            creditsText.text = "Map : https://jik-a-4.itch.io/metrocity\nCréateurs du jeu : https://github.com/CryptoDebug - https://github.com/RomainJlt - https://github.com/star0062 - https://github.com/PaulDecat";
+        }
     }
 
     private void PlayGame()
@@ -68,6 +74,7 @@ public class MainMenu : MonoBehaviour
     {
         if (optionsPanel != null)
             optionsPanel.SetActive(true);
+        UpdateCreditsVisibility();
     }
 
     private void QuitGame()
@@ -82,11 +89,26 @@ public class MainMenu : MonoBehaviour
     {
         if (optionsPanel != null)
             optionsPanel.SetActive(false);
+        UpdateCreditsVisibility();
+    }
+
+    private void UpdateCreditsVisibility()
+    {
+        if (creditsText != null)
+        {
+            creditsText.gameObject.SetActive(optionsPanel.activeSelf);
+        }
     }
 
     private void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+        if (resolutionDropdown != null && resolutions != null && resolutions.Length > 0)
+        {
+            int index = resolutionDropdown.value;
+            Resolution res = resolutions[index];
+            Screen.SetResolution(res.width, res.height, isFullscreen);
+        }
     }
 
     private void SetResolution(int resolutionIndex)
