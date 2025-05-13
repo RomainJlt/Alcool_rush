@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lights-Sheet_0: 2578410590950525596
+      Lights-Sheet_1: 6926253458946578066
+      Lights-Sheet_2: -6376512132454477421
+      Lights-Sheet_3: 7522715951865538171
+      Lights-Sheet_4: -2525790862014918385
+      Lights-Sheet_5: 175652240731073212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

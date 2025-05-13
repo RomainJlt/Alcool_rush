@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TilesHospital_0: 445584772541767672
+      TilesHospital_1: -1833511849930496076
+      TilesHospital_10: 9037048484441547760
+      TilesHospital_11: 8693958560851133109
+      TilesHospital_12: -3592337252750175609
+      TilesHospital_13: 4078280333025613246
+      TilesHospital_14: -2230555932690663162
+      TilesHospital_15: 6874660146167718978
+      TilesHospital_16: 4512059693285680994
+      TilesHospital_2: 993333441074167152
+      TilesHospital_3: 2286455768352539784
+      TilesHospital_4: -7458343448001075765
+      TilesHospital_5: 5881492400403337186
+      TilesHospital_6: -2682770029773027992
+      TilesHospital_7: 5620466984759055896
+      TilesHospital_8: -459069241415276385
+      TilesHospital_9: -3915192803558218294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

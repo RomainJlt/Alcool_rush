@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BedHospital-Sheet_0: -1776329878461763768
+      BedHospital-Sheet_1: 5742395430833808116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

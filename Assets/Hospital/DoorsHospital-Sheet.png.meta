@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DoorsHospital-Sheet_0: -3257847962016152693
+      DoorsHospital-Sheet_1: 5144451338920997168
+      DoorsHospital-Sheet_2: -9133049060978594798
+      DoorsHospital-Sheet_3: 6228094131721386476
+      DoorsHospital-Sheet_4: 8193558559122777786
+      DoorsHospital-Sheet_5: 5890187346847818401
+      DoorsHospital-Sheet_6: 612560869354740169
+      DoorsHospital-Sheet_7: 8293147695762530176
+      DoorsHospital-Sheet_8: -5324255035892931217
+      DoorsHospital-Sheet_9: 1903964635760230730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
