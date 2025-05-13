@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -32,6 +34,12 @@ public class PlayerHealth : MonoBehaviour
             {
                 isAlive = false; // Le joueur est mort
                 animator.SetTrigger("Die");
+                StartCoroutine(ChargerSceneApresDelai(2f)); // Lance la coroutine
+                IEnumerator ChargerSceneApresDelai(float delai)
+                {
+                    yield return new WaitForSeconds(delai);
+                    SceneManager.LoadScene("MainMenuScene");
+                }
             }
         }
 
