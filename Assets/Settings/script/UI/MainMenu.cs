@@ -56,7 +56,7 @@ public class MainMenu : MonoBehaviour
 
         if (controlsText != null)
         {
-            controlsText.text = "Contrôles :\nForward: Z\nBackward: S\nLeft: Q\nRight: D\nEchap = Pause";
+            controlsText.text = "Contrôles :\nForward: Z\nBackward: S\nLeft: Q\nRight: D\nPause: Echap";
         }
 
         if (creditsText != null)
@@ -67,7 +67,7 @@ public class MainMenu : MonoBehaviour
 
     private void PlayGame()
     {
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("HomeScene");
     }
 
     private void OpenOptions()
